@@ -1,0 +1,53 @@
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 4rem auto 0 auto;
+}
+
+.skillCard {
+  width: 90%;
+  background-color: rgba(0, 0, 0, 5%);
+  position: relative;
+  margin: 0rem auto 6rem auto;
+  border-radius: 20px;
+}
+
+.skillCard img {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skillCard h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 4rem 0 0.25rem 0;
+}
+
+.skillCard p {
+  font-size: 1.25rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .skillContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 1150px;
+    margin-top: 7.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .skillCard {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .skillCard {
+    width: 27.5%;
+  }
+}
